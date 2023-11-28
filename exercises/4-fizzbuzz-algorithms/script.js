@@ -5,8 +5,21 @@
   and for the multiples of five print “Buzz”.
   For numbers which are multiples of both three and five print “FizzBuzz”.
  */
-function isfizzBuzz(arg){
-  // your code here
+function isfizzBuzz(arg) {
+    if (typeof arg != 'number') {
+        return ("Please enter a number")
+    }
+    // your code here
+    else if (arg % 5 == 0 & arg % 3 == 0) {
+        return ("FizzBuzz")
+    } else if (arg % 3 == 0) {
+        return ("Fizz");
+    } else if (arg % 5 == 0) {
+        return ("Buzz");
+
+    } else {
+        return (arg)
+    }
 }
 
 // Usage example:
